@@ -70,11 +70,11 @@ The app uses the following mock REST API endpoints:
 ## Screenshots
 
 ### Dashboard
-![Dashboard View](![alt text](image.png))
+![alt text](image.png)
 
 ### User Details
-(![alt text](image-1.png))
-(![alt text](image-2.png))
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 ---
 
