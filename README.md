@@ -73,8 +73,8 @@ The app uses the following mock REST API endpoints:
 ![Dashboard View](![alt text](image.png))
 
 ### User Details
-![User Details View](![alt text](image-1.png))
-![User Details View](![alt text](image-2.png))
+(![alt text](image-1.png))
+(![alt text](image-2.png))
 
 ---
 
