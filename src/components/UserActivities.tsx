@@ -30,13 +30,13 @@ const UserAcitivies: React.FC<{ user_id: number }> = ({ user_id }) => {
 
   return (
     <>
-      <div className="p-6 bg-white shadow-md rounded-md mt-4">
+      <div className="card">
         <h2 className="text-xl font-semibold text-gray-800 mb-4">User Activities</h2>
         <div className="h-1/2">
-          <ul className="space-y-4 overflow-y-scroll">
+          <ul className="overflow-y-scroll">
             {activities.map((activity) => (
               <li key={activity.id} className="border-b pb-2">
-                <h3 className="text-lg font-medium text-gray-700">{activity.title}</h3>
+                <h3 className="text-lg">{activity.title}</h3>
                 <p className="text-gray-600">{activity.body}</p>
               </li>
             ))}

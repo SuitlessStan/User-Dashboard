@@ -31,16 +31,14 @@ const Dashboard: React.FC = () => {
   if (error) return <p className="text-center text-red-500">{error}</p>
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-2xl font-bold text-gray-800 mb-6">User Dashboard</h1>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="min-h-screen">
+      <h1 className="text-2xl font-bold mb-6 flex justify-center">User Dashboard</h1>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 no-bullets">
         {users.map((user) => (
-          <li key={user.id} className="p-4 bg-white shadow-md rounded-md">
-            <h2 className="text-lg font-semibold text-gray-800">{user.name}</h2>
+          <li key={user.id} className="card">
+            <h2 className="text-lg">{user.name}</h2>
             <p className="text-gray-600">{user.email}</p>
-            <Link
-              to={`/users/${user.id}`}
-              className="mt-4 inline-block px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+            <Link to={`/users/${user.id}`} className="btn btn-blue">
               View Details
             </Link>
           </li>

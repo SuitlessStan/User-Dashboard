@@ -15,26 +15,21 @@ const UserDetails: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <Link
-        to="/"
-        className="inline-block mb-4 px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600">
+    <div className="min-h-screen">
+      <Link to="/" className="btn btn-gray my-2 mx-2">
         Back to Dashboard
       </Link>
       <UserProfile user_id={current_user_id} />
       <UserActivities user_id={current_user_id} />
-      <div className="mt-6 flex space-x-4 justify-center">
+      <div className="mt-6 flex justify-center space-x-4">
         <button
           type="button"
           onClick={previousUser}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md disabled:bg-gray-300"
+          className={`btn btn-blue ${current_user_id === 1 ? "btn-disabled" : ""}`}
           disabled={current_user_id === 1}>
           Previous
         </button>
-        <button
-          type="button"
-          onClick={nextUser}
-          className="px-4 py-2 bg-green-500 text-white rounded-md">
+        <button type="button" onClick={nextUser} className="btn btn-green">
           Next
         </button>
       </div>

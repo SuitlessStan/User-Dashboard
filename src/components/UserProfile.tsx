@@ -31,11 +31,17 @@ const UserProfile: React.FC<{ user_id: number }> = ({ user_id }) => {
 
   return (
     <>
-      <div className="p-6 bg-white shadow-md rounded-md">
-        <h2 className="text-xl font-semibold text-gray-800 mb-4">User Profile</h2>
-        <p className="text-gray-700 font-medium">Name: {user?.name}</p>
-        <p className="text-gray-700 font-medium">Email: {user?.email}</p>
-        <p className="text-gray-700 font-medium">Phone: {user?.phone}</p>
+      <div className="card">
+        <h2 className="card-title">User Profile</h2>
+        <p className="text-gray-700">
+          <strong>Name:</strong> {user?.name}
+        </p>
+        <p className="text-gray-700">
+          <strong>Email:</strong> {user?.email}
+        </p>
+        <p className="text-gray-700">
+          <strong>Phone:</strong> {user?.phone}
+        </p>
       </div>
     </>
   )

@@ -1,7 +1,7 @@
 
 # User Dashboard
 
-This is a React-based user dashboard application that fetches and displays user data from a REST API. The app includes a dashboard listing all users and allows navigation to detailed user profiles and activities. It is styled with Tailwind CSS and demonstrates modern React development practices.
+This is a React-based user dashboard application that fetches and displays user data from a REST API. The app includes a dashboard listing all users and allows navigation to detailed user profiles and activities. It is styled with CSS and demonstrates modern React development practices.
 
 ---
 
@@ -11,7 +11,7 @@ This is a React-based user dashboard application that fetches and displays user 
 - **User Profile**: Shows detailed information about a selected user.
 - **User Activities**: Displays a list of posts created by the selected user.
 - **Navigation**: Includes "Next" and "Previous" buttons to navigate between user details.
-- **Responsive Design**: Styled with Tailwind CSS for a mobile-friendly layout.
+- **Responsive Design**: Styled with CSS for a mobile-friendly layout.
 - **Error Handling and Loading States**: Provides visual feedback during data fetching.
 
 ---
@@ -22,7 +22,6 @@ This is a React-based user dashboard application that fetches and displays user 
 - **TypeScript**: To add static type checking and improve code maintainability.
 - **React Router**: For dynamic routing between dashboard and user details.
 - **Axios**: To fetch data from REST API endpoints.
-- **Tailwind CSS**: For modern, utility-first styling.
 
 ---
 
@@ -67,21 +66,10 @@ The app uses the following mock REST API endpoints:
 
 ---
 
-## Screenshots
-
-### Dashboard
-![alt text](image.png)
-
-### User Details
-![alt text](image-1.png)
-![alt text](image-2.png)
-
----
-
 ## Customization
 
 1. **API Endpoints**: You can change the API endpoints in the `axios` calls inside `Dashboard.tsx`, `UserProfile.tsx`, and `UserActivities.tsx`.
-2. **Styling**: Modify the Tailwind classes in the components to customize the design.
+2. **Styling**: Modify the classes in the components to customize the design.
 3. **Components**: Add new components or extend existing ones as per your requirements.
 
 ---
