@@ -71,26 +71,3 @@ The app uses the following mock REST API endpoints:
 1. **API Endpoints**: You can change the API endpoints in the `axios` calls inside `Dashboard.tsx`, `UserProfile.tsx`, and `UserActivities.tsx`.
 2. **Styling**: Modify the classes in the components to customize the design.
 3. **Components**: Add new components or extend existing ones as per your requirements.
-
----
-
-## Contributing
-
-1. Fork the repository:
-   ```bash
-   git fork https://github.com/your-username/user-dashboard.git
-   ```
-2. Create a new feature branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add your message here"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Create a pull request on GitHub.
-
